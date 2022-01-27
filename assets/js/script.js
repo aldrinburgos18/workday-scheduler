@@ -2,7 +2,7 @@ var container = document.querySelector(".container");
 
 //display current day on header
 var currentDay = document.querySelector("#currentDay");
-currentDay.innerHTML = moment().format("MMMM Do, YYYY");
+currentDay.innerHTML = moment().format("dddd - MMMM Do, YYYY");
 
 //array for task time and description
 var savedTasks = [];
@@ -37,10 +37,10 @@ var displayTaskList = function () {
     var taskLi = document.createElement("div");
     taskLi.classList.add("row", "time-block");
     var taskTime = document.createElement("div");
-    taskTime.classList.add("col-1", "hour", "pt-2");
+    taskTime.classList.add("col-2", "hour", "pt-2");
     taskTime.innerText = savedTasks[i].time;
     var taskDesc = document.createElement("textarea");
-    taskDesc.classList.add("col-10", "description");
+    taskDesc.classList.add("col-9", "description");
     taskDesc.innerText = savedTasks[i].task;
     var saveButton = document.createElement("button");
     saveButton.classList.add("col-1", "saveBtn");
