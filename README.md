@@ -52,7 +52,7 @@ _[More Information about this license...](https://opensource.org/licenses/MIT)_
 
 -HTML  
 -CSS  
--Bootstrap
--Javascript
--jQuery
+-Bootstrap   
+-Javascript   
+-jQuery   
 -MomentJS
