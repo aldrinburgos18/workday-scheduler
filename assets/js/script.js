@@ -59,12 +59,8 @@ var auditTask = function (li, time, desc, save) {
   if (moment().isAfter(timeEl)) {
     //disable editing
     desc.disabled = true;
-    //remove class
-    desc.classList.remove("future");
     desc.classList.add("past");
   } else if (Math.abs(moment().diff(timeEl, "hours")) != 0) {
-    //remove class
-    desc.classList.remove("past");
     desc.classList.add("future");
   }
   li.append(time, desc, save);
